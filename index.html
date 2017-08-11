@@ -1,0 +1,266 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport"><!-- Koppla in Bootstrap css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"><!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link href="css/style.css" rel="stylesheet" type="text/css"><!-- Koppla in och JQuery Bootstrap javascript -->
+
+    <script src="js/jquery.min.js" type="text/javascript">
+    </script>
+    <script src="js/bootstrap.min.js" type="text/javascript">
+    </script><!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+
+<!-- BASEEND-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+    <script src="js/funktion.js" type="text/javascript">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    
+
+
+
+
+
+
+    <!-- Typsnitt från google -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Megrim|Quicksand" rel="stylesheet"><!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Alice Petersson Photography</title>
+    <link href="https://cdn3.cdnme.se/4598375/9-3/untitled-1_56ae66f22a6b226003328d97.png" rel="shortcut icon">
+</head><!-- I body finns allt innehåll på hemsidan -->
+
+<body ng-app="app">
+
+    <div id="wrapper">
+
+        <!-- I nav finns alla länkar eller knappar för navigering, tex en menyrad -->
+        <nav class="nav navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li id="left">
+                        <a href="#C">Startsida</a>
+                    </li>
+                    <li>
+                        <a href="#C1">Om Mig</a>
+                    </li>
+                    <li>
+                        <a href="#C2">Mina Hästar</a>
+                    </li>
+                    <li>
+                        <a href="#C3">Beställa</a>
+                    </li>
+                    <li>
+                        <a href="#C4">Fotogalleri</a>
+                    </li>
+                    <li>
+                        <a href="menyval1.html">Kommentarer</a>
+                    </li>
+                </ul>
+                <hr width="60%">
+            </div>
+    </nav>
+        <div class="image">
+
+    
+            <h1 id="C">Alice Petersson Photography</h1><br>
+            <br>
+        </div>
+        <div class="parallax p-horse"></div>
+        <div style="height:1000px">
+
+            <!-- OM MIG avsnittet -->
+
+
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <div class="borderbox">
+                        <h2 id="C1">Vem är Alice Petersson?</h2><br>
+                        <p>En tjej på 16 år som är uppvuxen och bor utanför Lund i Skåne Län. Redan som liten var jag intresserad av hästar och vid 6 år ålder fick jag börja efter mycket tjat på mamma att börja på ridskola. Har varit stalltjej på ridskolan i ca 4 år och ridit aktiv där i ca 10 år. Bredvid ridskolan har jag även ridit medryttarponny bland annat Chinook som va den första. Tog steget ut för att bara rida privat för ungefär två år sedan. Har sedan dess hunnit rida ungponny hingst i ett och ett halvt år. Har nu gått upp på storhäst och hoppas på att utvecklas vidare som ryttare. Har även ett stort intresse för fotografi, sociala medier och skapar alltid tid för mina vänner. Pluggar just nu ekonomi programmet på Polhemskolan i Lund.</p>
+                        <h2>Hur började du som fotograf?</h2><br>
+                        <p>Redan som liten började jag fota med engångskameror när vi var på semester utomlands. Köpte sedan min första egna digitalkamera för egna pengar, kommer starkt ihåg att den var rosa. Fick min första systemkamera, eller rättaresagt sparade halva kameran själv, på min födelsedag när jag fyllde ??år. Har sedan fotograferat allt jag kunnat hitta vara intressant enligt mina ögon.<br>
+                        Har under senare åren fotograferat mer hästsport och tävlingar. Skulle gärna vilja utvecklas mer på proträtt hållet. Mitt mål är att hela tiden utvecklas som fotograf och hitta nya sätt.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="borderbox">
+                        <h2>Vad har du för utrustning?</h2><br>
+                        <p>Nikon D5200<br>
+                        Nikkor 18-55mm<br>
+                        Nikkor 35mm f.1,8<br>
+                        Sigma 55-200mm<br>
+                        SB-300<br>
+                        <br>
+                        Sony A5100 med tillhörande kittobjektiv<br>
+                        <br>
+                        Studiolampor + Stativ + Självutlösare mm<br>
+                        <br>
+                        Fotar nästan allt med Nikon och använder Sony till min youtubekanal. <a href="https://youtube.com/c/alicepetersson">Kika gärna in den här</a></p><br>
+                    </div>
+                    <div class="borderbox">
+                        <h2>Har du Instagram?</h2><!-- SnapWidget -->
+                        <script src="https://snapwidget.com/js/snapwidget.js">
+                        </script> <iframe class="snapwidget-widget" frameborder="0" scrolling="no" src="https://snapwidget.com/embed/421839" style="border:none; overflow:hidden; width:100%;"></iframe>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+        <div class="parallax p-keso"></div>
+        <div style="height:1000px">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">
+                    <!-- Mina Hästar avsnittet -->
+                    <div class="borderbox1">
+                        <h3 id="C2">Mina Hästar</h3><br>
+
+                        <div class="dropdown">
+                            <div class="flip">Samba<br></div>
+                                <div class="panel">Samba var min första favorit häst och var även en av dom hästarna jag lärde mig rida på. Mycket blod,svett och tårar gav hon mig. Med sin mjuka galopp och korta trav var hon enkel för lilla mig att klara av. Ej bild!
+                                </div>
+                        </div>
+
+
+                            <div class="dropdown">
+                                <div class="flip">Chinook<br></div>
+                                    <div class="panel">Chinook va min första medryttarponny som jag lärde mig riktig ridning på. Fick bland annat träna dressyr en gång i veckan för super duktig dressyrtränare i över ett år. En ponny som förevigt kommer att fylla mitt hjärta. Hon fick tyvärr tas bort Augusti 2015 pågrund av fel på tänderna.  
+                                </div>
+                            </div>
+
+                            <div class="dropdown">
+                                <div class="flip">Lady<br></div>
+                                    <div class="panel">Lady var en C-ponny som jag var medryttare på under några månader. Hon blev tyvärr halt och fick åka tillbaka till sin ägare. Vi hade ingen aning vad som gjorde henne helt. Vet tyvärr inte ifall hon lever eller ej. </div>
+                                </div>
+
+                            <div class="dropdown">
+                                <div class="flip">Amadeuz<br></div>
+                                    <div class="panel">Amadeuz är ponnyn som gjorde att jag fick tillbaka mitt hästintresse igen. I Augusti 2014 åkte jag och pysslade med honom för första gången. Vi hoppade hinder jag byggde av trädstockar, pottar mm. Tömkörde, cykla och sprang. Aldrig träffat en finare ponny. Amadeuz och Lady är ägda av samma person så när vi var tvugna att lämna tillbaka Lady fick vi lämna Amadeuz också. Första och enda gången jag gråtit när en häst lämnat. </div>
+                                </div>
+
+
+                                <div class="dropdown">
+                                    <div class="flip">Tiger<br></div>
+                                        <div class="panel">Tiger red jag bara en kort stund men har fortfarande kontakt med hans ägare vilket är kul. Ser honom då och då på facebook eller instagram. </div>
+                                </div>
+
+                            <div class="dropdown">
+
+                                 <div class="flip">Invictus Castleknock<br></div>
+                                    <div class="panel">Efter Tiger hittade jag keso, 6årig ponny, hingst, outbildad. På mindre än ett år hade vi hoppat våran debutt PnJ som gick super. Tyvärr blev han helt annorlunda på tävling så därför gick inte tävlingarna så bra. Men Kesos personlighet och vänskap var något speciellt. Vi var även på en stor hästgård i 2,5 vecka, jag jobbade och fick lektioner i betalning av duktiga tränare. Lämnade endast Keso pågrund av att han stod 20 min hemifrån.    </div>
+                            </div>
+
+                            <div class="dropdown">
+                                <div class="flip">ZZ Topp</div>
+                                        <div class="panel">ZZ Topp kallas Toppen och är min nuvarande medryttarhäst. Började rida honom April 2017 och vi håller på att lära känna varandra. Första storhästen jag rider så håller på att lära mig allt nytt. Vi ska börja träna dressyr nu när han kommer tillbaka från sommarbetet. Han är uppfödd på gården han står och är född 2011.</div>
+                            </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <br>
+                    <center>
+                        <img src="bilder/minahest.jpg">
+                    </center><br>
+                </div>
+                <div class="col-sm-1"></div>
+            </div><!-- Mina Hästar avsnittet -->
+            <hr>
+            <div class="parallax p-janelle"></div>
+            <div style="height:250px">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                        <div class="borderbox">
+                            <h2 id="C3">Hästtävlingar</h2><br>
+                            <p>Jag brukar finnas på alla hästtävlingar från lokal nivå på ponny till internationella tävlingar som Falsterbo Horse Show. Kontakta mig i formuläret nedan. Skriv tävling, klass och namn på dig och ponnyn alt ponnyns tävlingsnummer.<br>
+                            <br>
+                            Webb-format-1000 px - 20kr/bild eller 10 för 100kr</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="borderbox">
+                            <h2>Privatfotografering</h2><br>
+                            <p>Samla ihop ett gäng vänner så ses vi i stallet och kör varsin mini fotografering! Efteråt får ni välja tre bilder var och om så önskas lägga till fler bilder. Ett prisvärt sätt att få fina bilder på dig och din häst. Minimum 3 personer!<br>
+                            <br>
+                            detta ingår / person: Fotografering 30min 3 digitala web-bilder</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                            <form action="https://formspree.io/alicepeterssonse@hotmail.com" class="contact-form" method="post">
+                                <input name="_replyto" placeholder="Email" type="email" class="forminput"> 
+                                <textarea name="message" placeholder="Ditt meddelande" class="forminput"></textarea> <input class="contact-form contact-send" type="submit" value="Send">
+                            </form>
+                    </div>
+                    <div class="col-sm-4"></div>
+
+                </div>
+
+            <!-- Galleri avsnittet -->
+                <hr>
+                <div class="row">
+                    <h2 id="C4">Galleri</h2><br>
+
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                              </ol>
+
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+
+                                <div class="item active">
+                                  <img src="bilder/amadeuz.jpg" alt="Amadeuz">
+                                </div>
+
+                                <div class="item">
+                                  <img src="bilder/chinook.jpg" alt="Chinook">
+                                </div>
+
+                                <div class="item">
+                                  <img src="bilder/lady.jpg" alt="My fair Lady II">
+                                </div>
+                              </div>
+
+                              <!-- Left and right controls -->
+                              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                        </div>
+
+                        
+
+                </div>
+        </div>
+
+
+
+
+
+
+</body>
+</html>
